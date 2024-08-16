@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rancho&display=swap');
+
+* { 
+     padding: 0;
+     margin: 0%;
+     box-sizing: border-box;
+     display: grid;
+     font-family: "Rancho", cursive;
+     font-weight: 400;
+     font-style: normal;
+     text-decoration: none;
+     list-style: none;
+}
+          
+
+
+.novedades {height: 100px; padding-top: 20px;}
+.novedades-2 {height: 200px;}
+.correo {height: 60px;}
+.fb {height: 60px;}
+.ig {height: 60px;}
+.tienda {height: 100px;}
+.juguete {height: 130px;}
+.img-maps {height: 400px;}
+
+
+.inicio-2 {
+     min-height: 70vh;
+     display: flex;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     }
+
+.servicios {background-color: rgb(140, 246, 250);}
+.ubicacion {background-color: rgb(255, 134, 249);}
+.Contacto {background-color: rgb(140, 246, 250);}
+.footer {background-color: rgb(140, 246, 250);}
+
+
+/* Menú*//*
+.navbar {max-width: 1200px; margin: 0 auto; position: relative;}
+.menu-2 {display: flex; justify-content: space-around;}
+.item {color: white; padding: 10px 15px; display: block; font-size: 16px;}
+.item a:hover {background-color: rgb(140, 246, 250); border-radius: 4px;}*/
+.navbar {
+     max-width: 1200px;
+     margin: 0 auto;
+     position: relative;
+ }
+ 
+ /* Estilo para la lista del menú */
+ .nav-list {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .nav-item a {
+     text-decoration: none;
+     color: rgb(255, 134, 249);
+     padding: 10px 15px;
+     display: block;
+     font-size: 16px;
+ }
+ 
+ .nav-item a:hover {
+     background-color: #575757;
+     border-radius: 4px;
+ }
+ 
+ /* Estilos para el botón de menú en dispositivos móviles */
+ .menu-toggle {
+     display: none;
+     cursor: pointer;
+     position: absolute;
+     top: 15px;
+     right: 20px;
+ }
+ 
+ .bar {
+     display: block;
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     background-color: white;
+ }
+ 
+ /* Media Query para pantallas más pequeñas */
+ @media (max-width: 768px) {
+     .nav-list {
+         flex-direction: column;
+         background-color: #333;
+         position: absolute;
+         top: 60px;
+         left: 0;
+         width: 100%;
+         height: 0;
+         overflow: hidden;
+         transition: height 0.3s ease;
+     }
+ 
+     .nav-item {
+         text-align: center;
+         padding: 15px 0;
+     }
+ 
+     .menu-toggle {
+         display: block;
+     }
+ 
+     /* Al activar el menú, expandir la lista */
+     .nav-list.active {
+         height: auto;
+     }
+ }
+
+/*Botones de Contacto*/
+/* Centrar el texto "Contactanos" */
+
+.contactanos {
+    text-align: center;
+    font-size: 24px; /* Ajusta el tamaño según tu preferencia */
+    margin-bottom: px; /* Espacio entre el texto y los botones */
+    color: rgb(255, 134, 249);
+}
+
+/* Asegurarse de que el contenedor de la sección también esté centrado */
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+/* Centrar los botones con imágenes */
+.whatsapp_container, .fb_container, .ig_container {
+    margin: 10px; /* Espacio entre los botones */
+}
+
+.whatsapp, .fb, .ig {
+    width: 60px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 60px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    display: block;
+    margin: 0 auto; /* Esto centra la imagen dentro de su contenedor */
+}
+/*Botones de contacto*/
+               
+
+
+/*Ubicación*/
+.ubicacion {text-align: center; color: rgb(140, 246, 250);}
+#Ubicacion {height: 780px;}
+.img-container {display: flex; justify-content: center; align-items: center; padding: 20px; padding-bottom: 50px;}
+.mapa {border: none; max-width: 100%; height: 450px;}
+/*Ubicacion*/
+
+.servicios {
+    text-align: center;
+    padding: 20px;}
+    
+.servicios-title {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 20px;
+    color: rgb(255, 134, 249); /* Ajusta el color según sea necesario */
+}
+
+.servicios-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los elementos de la lista */
+}
+
+.servicio-item {
+    text-align: center;
+    max-width: 200px; /* Tamaño máximo de cada item */
+}
+
+.servicio-item p {
+    margin-bottom: 15px; /* Espacio entre el texto y la imagen */
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+.servicio-item img {
+    width: 150px; /* Tamaño de las imágenes */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/*footer*/
+.footer {text-align: center; height: 20px;}
+/*footer*/
+
+
+/*fondo inicio*/
+.inicio {
+    position: relative;
+    background-image: url('fondo-intro.avif');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(6px); /* Ajusta el valor para más o menos desenfoque */
+    
+}
+
+.inicio-2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;}
+    /*fondo inicio*/
